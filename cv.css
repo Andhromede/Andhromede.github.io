@@ -1,0 +1,599 @@
+/*********************** GENERAL ************************/
+/********************************************************/
+body{
+    --purple: #83435E;
+    --rose: #96024C;
+    --green: #7BAE47;
+    --orange: #C4872A;
+    --red: #9F0D0E;
+    --turquoise: #01B1AB;
+}
+
+/********** IMG HEADER + FOOTER ***********/
+    .maxWidth100{
+        max-width: 100%;
+    }
+
+/********** TITRE ***********/
+    .cda{
+        position: relative;
+        z-index: 100;
+        margin-top: -2em;
+        text-align: center;
+        font-weight: bolder;
+        font-size: 250%;
+    }
+
+/********** ICONS ***********/
+    .icon{
+        width: 50%;
+        min-width:90px;
+    }
+
+/********** TRAIT POINTILLES ***********/
+    .dottedBottom5px{
+        border-bottom: dotted black 5px;
+    }
+
+/********** COULEURS DES BARRES DE COMP ***********/
+    .bg-purple{
+        background-color:var(--purple);
+    }
+
+    .bg-rose{
+        background-color:var(--rose);
+    }
+
+    .bg-green{
+        background-color:var(--green);
+    }
+
+    .bg-orange{
+        background-color:var(--orange);
+    }
+
+    .bg-red{
+        background-color:var(--red);
+    }
+
+    .bg-turquoise{
+        background-color:var(--turquoise);
+    }
+
+/********** CAMEMBERT ***********/
+    .test{
+        width: 280px;
+        padding-right: 50px;
+    }
+
+/********** COMPENTENCES ***********/
+    .camembert{
+        margin-top:-6em;
+    }
+
+    .qualites{
+        position: relative;
+        z-index: 100;
+        font-size: 1.3em;
+    }
+
+    .serieux{
+        top: 2.5vh;
+        left: 16%;
+    }
+
+    .tenace{
+        bottom: 3vh;
+        left: 67%;
+    }
+
+    .autonome{
+        top: 10.5vh;
+        left: 9%;
+    }
+
+    .adaptation{
+        bottom: 13.5vh;
+        left: 73%;
+    }
+
+    .autodidacte{
+        bottom: 4.5vh;
+        left: 22%;
+    }
+
+    .perfectionniste{
+        bottom: 12vh;
+        left: 68%;
+    }
+
+    @media (min-width:768px) and (max-width:992px) {
+        .serieux{
+            top: 2vh;
+            left: 1%;
+        } 
+
+        .tenace{
+            bottom: 3.5vh;
+            left: 70%;
+        }
+
+        .autonome{
+            top: 11vh;
+            left: -15%;
+        }
+    
+        .adaptation{
+            left: 85%;
+        }
+    
+        .perfectionniste{
+            left: 78%;
+        }
+    }
+
+    @media (max-width:420px) {
+        .serieux{
+            top: 2vh;
+            left: 5%;
+            font-size:1em;
+        } 
+
+        .tenace{
+            bottom: 3.5vh;
+            left: 70%;
+        }
+
+        .autonome{
+            top: 15vh;
+            left: -3%;
+            font-size:1em;
+        }
+    
+        .adaptation{
+            left: 85%;
+        }
+    
+        .perfectionniste{
+            left: 78%;
+        }
+
+        .autodidacte{
+            left: 15%;
+            top: -7vh;
+            font-size:1em;
+        }
+    }
+
+
+
+
+/********************** SKILLS BAR **********************/
+/********************************************************/
+    .SkillBar {
+        width: 90%;
+        height: 50px;
+        position: relative;
+        background: rgba(17, 17, 17, .3);
+        margin: 20px auto;
+    }
+
+/*********** INFOGRAPHIE EFFECTS ***********/
+    #Skill-HTML {
+        width: 80%;
+        animation: Animate-HTML 4s;
+        -webkit-animation: Animate-HTML 4s;
+        -moz-animation: Animate-HTML 4s;
+        -o-animation: Animate-HTML 4s;
+        height: 50px;
+        position: absolute;
+        background-color: var(--purple);
+    }
+
+    @keyframes Animate-HTML {
+        from {
+        width: 10px;
+    }
+
+    to {
+        width: 80%}
+    }@-webkit-keyframes Animate-HTML {
+        from {
+        width: 10px;
+    }
+
+    to {
+        width: 80%}
+    }@-moz-keyframes Animate-HTML {
+        from {
+        width: 10px;
+    }
+
+    to {
+        width: 80%}
+    }@-o-keyframes Animate-HTML {
+        from {
+        width: 10px;
+    }
+
+    to {
+        width: 65%}
+    }
+
+/*********** SQL EFFECTS ***********/
+    #Skill-CSS {
+        animation: Animate-CSS 5s;
+        -webkit-animation: Animate-CSS 5s;
+        -moz-animation: Animate-CSS 5s;
+        -o-animation: Animate-CSS 5s;
+        width: 72%;
+        height: 50px;
+        position: absolute;
+        background-color: var(--rose);
+    }
+    @keyframes Animate-CSS {
+        from {
+        width: 10px;
+    }
+
+    to {
+        width: 72%}
+    }@-webkit-keyframes Animate-CSS {
+        from {
+        width: 10px;
+    }
+
+    to {
+        width: 72%}
+    }@-moz-keyframes Animate-CSS {
+        from {
+        width: 10px;
+    }
+
+    to {
+        width: 72%}
+    }@-o-keyframes Animate-CSS {
+        from {
+        width: 10px;
+    }
+
+    to {
+        width: 72%}
+    }
+
+/*********** HTML EFFECTS ***********/
+    #Skill-jQuery {
+        animation: Animate-jQuery 5s;
+        -webkit-animation: Animate-jQuery 5s;
+        -moz-animation: Animate-jQuery 5s;
+        -o-animation: Animate-jQuery 5s;
+        width:90%;
+        height: 50px;
+        position: absolute;
+        background-color: var(--green);
+    }
+    @keyframes Animate-jQuery {
+        from {
+        width: 10px;
+    }
+    to {
+        width: 90%}
+    }@-webkit-keyframes Animate-jQuery {
+        from {
+        width: 10px;
+    }
+    to {
+        width: 90%}
+    }@-moz-keyframes Animate-jQuery {
+        from {
+        width: 10px;
+    }
+    to {
+        width: 90%}
+    }@-o-keyframes Animate-jQuery {
+        from {
+        width: 10px;
+    }
+    to {
+        width: 90%}
+    }
+
+/*********** JS / JQUERY EFFECTS ***********/
+    #Skill-JS {
+        animation: Animate-JS 4s;
+        -webkit-animation: Animate-JS 4s;
+        -moz-animation: Animate-JS 4s;
+        -o-animation: Animate-JS 4s;
+        width: 62%;
+        height: 50px;
+        position: absolute;
+        background-color: var(--orange);
+    }
+    @keyframes Animate-JS {
+        from {
+        width: 10px;
+    }
+    to {
+        width: 62%}
+    }@-webkit-keyframes Animate-JS {
+        from {
+        width: 10px;
+    }
+    to {
+        width: 62%}
+    }@-moz-keyframes Animate-JS {
+        from {
+        width: 10px;
+    }
+    to {
+        width: 62%}
+    }@-o-keyframes Animate-JS {
+        from {
+        width: 10px;
+    }
+    to {
+        width: 62%}
+    }
+
+/*********** PHP / SYMFONY EFFECTS ***********/
+    #Skill-XML {
+        animation: Animate-XML 4s;
+        -webkit-animation: Animate-XML 4s;
+        -moz-animation: Animate-XML 4s;
+        -o-animation: Animate-XML 4s;
+        width: 85%;
+        height: 50px;
+        position: absolute;
+        background-color: var(--red);
+    }
+    @keyframes Animate-XML {
+        from {
+        width: 10px;
+    }
+    to {
+        width: 85%}
+    }@-webkit-keyframes Animate-XML {
+        from {
+        width: 10px;
+    }
+    to {
+        width: 85%}
+    }@-moz-keyframes Animate-XML {
+        from {
+        width: 10px;
+    }
+    to {
+        width: 85%}
+    }@-o-keyframes Animate-XML {
+        from {
+        width: 10px;
+    }
+    to {
+        width: 85%}
+    }
+
+/*********** GIT EFFECTS ***********/
+    #Skill-C {
+        animation: Animate-C 4s;
+        -webkit-animation: Animate-C 4s;
+        -moz-animation: Animate-C 4s;
+        -o-animation: Animate-C 4s;
+        width: 62%;
+        height: 50px;
+        position: absolute;
+        background-color: var(--turquoise);
+    }
+    @keyframes Animate-C {
+        from {
+        width: 10px;
+    }
+    to {
+        width: 62%}
+    }@-webkit-keyframes Animate-C {
+        from {
+        width: 10px;
+    }
+    to {
+        width: 62%}
+    }@-moz-keyframes Animate-C {
+        from {
+        width: 10px;
+    }
+    to {
+        width: 62%}
+    }@-o-keyframes Animate-C {
+        from {
+        width: 10px;
+    }
+    to {
+        width: 62%}
+    }
+
+/*********** REACT EFFECTS ***********/
+    #Skill-JAVA {
+        animation: Animate-JAVA 4s;
+        -webkit-animation: Animate-JAVA 4s;
+        -moz-animation: Animate-JAVA 4s;
+        -o-animation: Animate-JAVA 4s;
+        width: 50%;
+        height: 50px;
+        position: absolute;
+        background-color: #727272;
+    }
+    @keyframes Animate-JAVA {
+        from {
+        width: 10px;
+    }
+    to {
+        width: 50%}
+    }@-webkit-keyframes Animate-JAVA {
+        from {
+        width: 10px;
+    }
+    to {
+        width: 50%}
+    }@-moz-keyframes Animate-JAVA {
+        from {
+        width: 10px;
+    }
+    to {
+        width: 50%}
+    }@-o-keyframes Animate-JAVA {
+        from {
+        width: 10px;
+    }
+    to {
+        width: 50%}
+    }
+
+/*********** AUTRE EFFECTS ***********/
+    #Skill-PHP {
+        animation: Animate-PHP 4s;
+        -webkit-animation: Animate-PHP 4s;
+        -moz-animation: Animate-PHP 4s;
+        -o-animation: Animate-PHP 4s;
+        width: 50%;
+        height: 50px;
+        position: absolute;
+        background-color: #5A69A6;
+    }
+    @keyframes Animate-PHP {
+        from {
+        width: 10px;
+    }
+    to {
+        width: 50%}
+    }@-webkit-keyframes Animate-PHP {
+        from {
+        width: 10px;
+    }
+    to {
+        width: 50%}
+    }@-moz-keyframes Animate-PHP {
+        from {
+        width: 10px;
+    }
+    to {
+        width: 50%}
+    }@-o-keyframes Animate-PHP {
+        from {
+        width: 10px;
+    }
+    to {
+        width: 50%}
+    }
+
+/*********** AUTRE EFFECTS ***********/
+    #Skill-SQL {
+        animation: Animate-SQL 4s;
+        -webkit-animation: Animate-SQL 4s;
+        -moz-animation: Animate-SQL 4s;
+        -o-animation: Animate-SQL 4s;
+        width: 80%;
+        height: 50px;
+        position: absolute;
+        background-color: #23b1db;
+    }
+    @keyframes Animate-SQL {
+        from {
+        width: 10px;
+    }
+    to {
+        width: 80%}
+    }@-webkit-keyframes Animate-SQL {
+        from {
+        width: 10px;
+    }
+    to {
+        width: 80%}
+    }@-moz-keyframes Animate-SQL {
+        from {
+        width: 10px;
+    }
+    to {
+        width: 80%}
+    }@-o-keyframes Animate-SQL {
+        from {
+        width: 10px;
+    }
+    to {
+        width: 80%}
+    }
+
+/*********** AUTRE EFFECTS ***********/
+    #Skill-VBNET {
+        animation: Animate-VBNET 4s;
+        -webkit-animation: Animate-VBNET 4s;
+        -moz-animation: Animate-VBNET 4s;
+        -o-animation: Animate-VBNET 4s;
+        width: 35%;
+        height: 50px;
+        position: absolute;
+        background-color: #f8a51e;
+    }
+    @keyframes Animate-VBNET {
+        from {
+        width: 10px;
+    }
+    to {
+        width: 35%}
+    }@-webkit-keyframes Animate-VBNET {
+        from {
+        width: 10px;
+    }
+    to {
+        width: 35%}
+    }@-moz-keyframes Animate-VBNET {
+        from {
+        width: 10px;
+    }
+    to {
+        width: 35%}
+    }@-o-keyframes Animate-VBNET {
+        from {
+        width: 10px;
+    }
+    to {
+        width: 35%}
+    }
+
+
+/*********** TEXT COMPETENCES BAR ***********/
+    .Skill-Area {
+        z-index: 1;
+        float: left;
+        position: absolute;
+        margin-top: 15px;
+        margin-left: 15px;
+        text-shadow: none;
+        color: #fff;
+        font-family: Lato-Regular, sans-serif;
+        font-size: 18px;
+    }
+    
+/*********** TEXT POURCENTAGE BAR ***********/
+    /* .PercentText {
+        z-index: 3;
+        position: relative;
+        padding-right: 15px;
+        margin-top: 15px;
+        float: right;
+        text-shadow: none;
+        color: #fff;
+        font-family: Lato-Regular, sans-serif;
+        font-size: 18px;
+    } */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
