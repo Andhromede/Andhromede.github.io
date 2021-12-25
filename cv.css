@@ -1,13 +1,60 @@
 /*********************** GENERAL ************************/
 /********************************************************/
-body{
-    --purple: #83435E;
-    --rose: #96024C;
-    --green: #7BAE47;
-    --orange: #C4872A;
-    --red: #9F0D0E;
-    --turquoise: #01B1AB;
-}
+    body{
+        --purple: #83435E;
+        --rose: #96024C;
+        --green: #7BAE47;
+        --darkGreen: #477338;
+        --orange: #C4872A;
+        --red: #9F0D0E;
+        --turquoise: #01B1AB;
+        --blue: #356BA2;
+        --darkTurquoise: #1A8A9B;
+        --grey: #727272;
+        --yellow: #DEDB00;
+        --violet: #5D1774;
+        --darkViolet: #514264;
+    }
+
+    .yellow{
+        color: var(--yellow);
+    }
+
+    .turquoise{
+        color: var(--turquoise);
+    }
+
+    .darkTurquoise{
+        color: var(--darkTurquoise);
+    }
+
+    .blue{
+        color: var(--blue);
+    }
+
+    .violet{
+        color: var(--purple);
+    }
+
+    .darkViolet{
+        color: var(--darkPurple);
+    }
+
+    .darkGreen{
+        color: var(--darkGreen);
+    }
+
+    .green{
+        color: var(--green);
+    }
+
+    .orange{
+        color: var(--orange);
+    }
+
+    .red{
+        color: var(--red);
+    }
 
 /********** IMG HEADER + FOOTER ***********/
     .maxWidth100{
@@ -15,7 +62,7 @@ body{
     }
 
 /********** TITRE ***********/
-    .cda{
+    .titreCDA{
         position: relative;
         z-index: 100;
         margin-top: -2em;
@@ -38,158 +85,121 @@ body{
 /********************* COMPETENCES **********************/
 /********************************************************/
     .imgCamembert{
-        margin-top:-6em;
-        width: 25vw;
-        min-width: 250px;
+        width: 300px;
         padding-right: 50px;
+        margin-left: 5em;
+        display: block;
     }
 
     .qualites{
-        position: relative;
+        position: absolute;
         z-index: 100;
         font-size: 1.3em;
+        text-align: center;
+        font-weight: bold;
+        transform: translate( -50%, -50% );
+    }
+    
+    .DisplayInlineBlock {
+        position: relative;
+        display: inline-block;
     }
 
-    .m-camembert{
-        margin-left: 5em;
+    .serieux {
+        top: 45%;
+        left: 12%;
     }
 
-    @media (max-width:463px) {
-        .serieux{
-            top: 4vw;
-            left: 3%;
-        }    
-        .tenace{
-            bottom: 5vh;
-            left: 65%;
-        }    
-        .autonome{
-            top: 10.5vh;
-            left: -1%;
-        }   
-        .adaptation{
-            bottom: 14.5vh;
-            left: 75%;
-        }
-        .autodidacte{
-            bottom: 4.5vh;
-            left: 15%;
-        }
-        .perfectionniste{
-            bottom: 15vh;
-            left: 70%;
-        }
+    .tenacite {
+        top: 40%;
+        left: 47vh;
     }
 
-    @media (min-width:464px) and (max-width:520px) {
-        .serieux{
-            top: 3vw;
-            left: 3%;
-        }    
-        .tenace{
-            bottom: 6vh;
-            left: 55%;
-        }    
-        .autonome{
-            top: 10.5vh;
-            left: -1%;
-        }   
-        .adaptation{
-            bottom: 14.5vh;
-            left: 65%;
-        }
-        .autodidacte{
-            bottom: 4.5vh;
-            left: 15%;
-        }
-        .perfectionniste{
-            bottom: 15vh;
-            left: 62%;
-        }
+    .adaptation {
+        top: 68%;
+        left: 55vh;
     }
 
-    @media (min-width:521px) and (max-width:767px) {
-        .serieux{
-            top: 3vw;
-            left: 3%;
-        }    
-        .tenace{
-            bottom: 5vh;
-            left: 50%;
-        }    
-        .autonome{
-            top: 10.5vh;
-            left: -1%;
-        }   
-        .adaptation{
-            bottom: 14.5vh;
-            left: 55%;
-        }
-        .autodidacte{
-            bottom: 4.5vh;
-            left: 15%;
-        }
-        .perfectionniste{
-            bottom: 15vh;
-            left: 52%;
-        }
+    .autonomie {
+        top: 87%;
+        left: 10%;
     }
 
-    @media (min-width:767px) and (max-width:991px) {
-        .serieux{
-            top: 2vw;
-            left: 5%;
-        }    
-        .tenace{
-            bottom: 5vh;
-            left: 150%;
-        }    
-        .autonome{
-            top: 10.5vh;
-            left: -1%;
-        }   
-        .adaptation{
-            bottom: 14.5vh;
-            left: 170%;
-        }
-        .autodidacte{
-            bottom: 4.5vh;
-            left: 15%;
-        }
-        .perfectionniste{
-            bottom: 15vh;
-            left: 155%;
-        }
+    .autodidacte {
+        top: 90%;
+        left: 51vh;
     }
 
-    @media (min-width:992px){
-        .serieux{
-            top: 2vw;
-            left: 5%;
-        }    
-        .tenace{
-            bottom: 5vh;
-            left: 110%;
-        }    
-        .autonome{
-            top: 10vh;
-            left: -10%;
-        }   
-        .adaptation{
-            bottom: 14.5vh;
-            left: 125%;
-        }
-        .autodidacte{
-            bottom: 4.5vh;
-            left: 15%;
-        }
-        .perfectionniste{
-            bottom: 15vh;
-            left: 115%;
-        }
+    .perfectionniste {
+        top: 100%;
+        left: 20vh;
     }
 
-/********************** SKILLS BAR **********************/
+/********************* QUELQUES CHIFFRES **********************/
+/**************************************************************/
+    .txtQlqChiffres{
+        font-size:1.4em;
+        font-weight: bolder;
+        color:#727272;
+    }
+
+    .txtChiffres{
+        font-size:2em;
+        font-weight: bolder;
+    }
+
+/********************* SECTION DATES **********************/
+/********************************************************/
+    .titreDate{
+        position: absolute;
+        font-size: 1.3em;
+        text-align: center;
+        font-weight: bold;
+        transform: translate( -50%, -50% );
+    }
+
+    .textSize{
+        font-size:1.2em;
+        line-height: 0.95em;
+        text-align: left;
+    }
+
+/******* positions des intitulés (section date) ******/
+    .cdaTitre{
+        top: 3%;
+        left: 70%;
+    }
+
+    .stageTitre{
+        top: 17%;
+        left: 70%;
+    }
+
+/******* textes sous intitulés (section date) ******/
+    .textCda{
+        top: 13vh;
+        left:40%
+    }
+
+    .phpSymfony{
+        top: 34vh;
+        left:37%
+    }
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+/********************** ANIMATIONS SKILLS BAR **********************/
 /********************************************************/
     .SkillBar {
         width: 90%;
@@ -440,7 +450,7 @@ body{
         width: 50%;
         height: 50px;
         position: absolute;
-        background-color: #727272;
+        background-color: var(--grey);
     }
     @keyframes Animate-JAVA {
         from {
@@ -607,6 +617,10 @@ body{
     } */
 
 
+
+
+
+    
 
 
 
