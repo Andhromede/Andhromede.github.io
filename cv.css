@@ -26,7 +26,7 @@ body{
 
 /********** ICONS ***********/
     .icon{
-        width: 50%;
+        width: 60%;
         min-width:90px;
     }
 
@@ -35,40 +35,13 @@ body{
         border-bottom: dotted black 5px;
     }
 
-/********** COULEURS DES BARRES DE COMP ***********/
-    .bg-purple{
-        background-color:var(--purple);
-    }
-
-    .bg-rose{
-        background-color:var(--rose);
-    }
-
-    .bg-green{
-        background-color:var(--green);
-    }
-
-    .bg-orange{
-        background-color:var(--orange);
-    }
-
-    .bg-red{
-        background-color:var(--red);
-    }
-
-    .bg-turquoise{
-        background-color:var(--turquoise);
-    }
-
-/********** CAMEMBERT ***********/
-    .test{
-        width: 280px;
-        padding-right: 50px;
-    }
-
-/********** COMPENTENCES ***********/
-    .camembert{
+/********************* COMPETENCES **********************/
+/********************************************************/
+    .imgCamembert{
         margin-top:-6em;
+        width: 25vw;
+        min-width: 250px;
+        padding-right: 50px;
     }
 
     .qualites{
@@ -77,96 +50,144 @@ body{
         font-size: 1.3em;
     }
 
-    .serieux{
-        top: 2.5vh;
-        left: 16%;
+    .m-camembert{
+        margin-left: 5em;
     }
 
-    .tenace{
-        bottom: 3vh;
-        left: 67%;
-    }
-
-    .autonome{
-        top: 10.5vh;
-        left: 9%;
-    }
-
-    .adaptation{
-        bottom: 13.5vh;
-        left: 73%;
-    }
-
-    .autodidacte{
-        bottom: 4.5vh;
-        left: 22%;
-    }
-
-    .perfectionniste{
-        bottom: 12vh;
-        left: 68%;
-    }
-
-    @media (min-width:768px) and (max-width:992px) {
+    @media (max-width:463px) {
         .serieux{
-            top: 2vh;
-            left: 1%;
-        } 
-
+            top: 4vw;
+            left: 3%;
+        }    
         .tenace{
-            bottom: 3.5vh;
-            left: 70%;
-        }
-
+            bottom: 5vh;
+            left: 65%;
+        }    
         .autonome{
-            top: 11vh;
-            left: -15%;
-        }
-    
+            top: 10.5vh;
+            left: -1%;
+        }   
         .adaptation{
-            left: 85%;
+            bottom: 14.5vh;
+            left: 75%;
         }
-    
-        .perfectionniste{
-            left: 78%;
-        }
-    }
-
-    @media (max-width:420px) {
-        .serieux{
-            top: 2vh;
-            left: 5%;
-            font-size:1em;
-        } 
-
-        .tenace{
-            bottom: 3.5vh;
-            left: 70%;
-        }
-
-        .autonome{
-            top: 15vh;
-            left: -3%;
-            font-size:1em;
-        }
-    
-        .adaptation{
-            left: 85%;
-        }
-    
-        .perfectionniste{
-            left: 78%;
-        }
-
         .autodidacte{
+            bottom: 4.5vh;
             left: 15%;
-            top: -7vh;
-            font-size:1em;
+        }
+        .perfectionniste{
+            bottom: 15vh;
+            left: 70%;
         }
     }
 
+    @media (min-width:464px) and (max-width:520px) {
+        .serieux{
+            top: 3vw;
+            left: 3%;
+        }    
+        .tenace{
+            bottom: 6vh;
+            left: 55%;
+        }    
+        .autonome{
+            top: 10.5vh;
+            left: -1%;
+        }   
+        .adaptation{
+            bottom: 14.5vh;
+            left: 65%;
+        }
+        .autodidacte{
+            bottom: 4.5vh;
+            left: 15%;
+        }
+        .perfectionniste{
+            bottom: 15vh;
+            left: 62%;
+        }
+    }
 
+    @media (min-width:521px) and (max-width:767px) {
+        .serieux{
+            top: 3vw;
+            left: 3%;
+        }    
+        .tenace{
+            bottom: 5vh;
+            left: 50%;
+        }    
+        .autonome{
+            top: 10.5vh;
+            left: -1%;
+        }   
+        .adaptation{
+            bottom: 14.5vh;
+            left: 55%;
+        }
+        .autodidacte{
+            bottom: 4.5vh;
+            left: 15%;
+        }
+        .perfectionniste{
+            bottom: 15vh;
+            left: 52%;
+        }
+    }
 
+    @media (min-width:767px) and (max-width:991px) {
+        .serieux{
+            top: 2vw;
+            left: 5%;
+        }    
+        .tenace{
+            bottom: 5vh;
+            left: 150%;
+        }    
+        .autonome{
+            top: 10.5vh;
+            left: -1%;
+        }   
+        .adaptation{
+            bottom: 14.5vh;
+            left: 170%;
+        }
+        .autodidacte{
+            bottom: 4.5vh;
+            left: 15%;
+        }
+        .perfectionniste{
+            bottom: 15vh;
+            left: 155%;
+        }
+    }
+
+    @media (min-width:992px){
+        .serieux{
+            top: 2vw;
+            left: 5%;
+        }    
+        .tenace{
+            bottom: 5vh;
+            left: 110%;
+        }    
+        .autonome{
+            top: 10vh;
+            left: -10%;
+        }   
+        .adaptation{
+            bottom: 14.5vh;
+            left: 125%;
+        }
+        .autodidacte{
+            bottom: 4.5vh;
+            left: 15%;
+        }
+        .perfectionniste{
+            bottom: 15vh;
+            left: 115%;
+        }
+    }
 
 /********************** SKILLS BAR **********************/
 /********************************************************/
@@ -335,7 +356,7 @@ body{
         width: 62%}
     }
 
-    
+
 /*********** PHP / SYMFONY EFFECTS ***********/
     #Skill-XML {
         animation: Animate-XML 4s;
