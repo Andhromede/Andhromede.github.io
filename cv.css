@@ -284,6 +284,14 @@
         }
     }
 
+    @media (max-width: 750px ){
+        .cdaSection, .msSection, .stageSection, .dwwmSection, .decouverteSection, 
+        .bioSection, .ricvSection, .tpCuisineSection, .informatiqueSection, .bepSection{
+            font-size: 1.1em;
+        }
+        
+    }
+
 
  
 
