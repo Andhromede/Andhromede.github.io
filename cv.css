@@ -16,7 +16,7 @@
         --grey: #727272; 
     }
 
-/********** Couleurs ***********/
+/************* Couleurs **************/
     .violet{
         color: var(--purple);
     }
@@ -69,27 +69,27 @@
         color: var(--grey);
     }
 
-/********** TEXT LINK ***********/
+/************* TEXT LINK **************/
     a{
         text-decoration:none;
     }
 
-    .textLink{
+    .fSize0-7em{
         font-size: 0.7em;
         font-weight: bolder;
     }
 
-    .textTitre{
+    .lHeight0-85em{
         line-height:0.85em;
     }
 
 
-/********** IMG HEADER + FOOTER ***********/
+/******** IMG HEADER + FOOTER *********/
     .maxWidth100{
         max-width: 100%;
     }
 
-/********** TITRE ***********/
+/*************** TITRE CDA ****************/
     .titreCDA{
         position: relative;
         z-index: 100;
@@ -111,7 +111,7 @@
         }
     }
 
-/********** ICONS ***********/
+/**************** ICONS *****************/
     .icon{
         width: 60%;
         min-width:90px;
@@ -215,7 +215,7 @@
         text-align: left;
     }
 
-/******* positions des sections (section date) ******/
+/************ positions des sections ***********/
     .cdaSection{
         top:7%;
     }
@@ -284,23 +284,41 @@
         }
     }
 
-    @media (max-width: 750px ){
+    @media (min-width: 550px ) and (max-width: 991px ){
         .cdaSection, .msSection, .stageSection, .dwwmSection, .decouverteSection, 
         .bioSection, .ricvSection, .tpCuisineSection, .informatiqueSection, .bepSection{
-            font-size: 1.1em;
-        }
-        
+            font-size: 1.4em;
+        }  
     }
 
+    @media (max-width: 550px ){
+        .cdaSection, .msSection, .stageSection, .dwwmSection, .decouverteSection, 
+        .bioSection, .ricvSection, .tpCuisineSection, .informatiqueSection, .bepSection{
+            font-size: 1.2em;
+        }
+    }
 
- 
+    .ml-Camembert{
+        margin-left: 4vw;
+    }
 
+    @media (min-width: 630px) and (max-width:990px){
+        .ml-Camembert{
+            margin-left: 17vw;
+        }
+    }
 
+    @media (min-width: 991px) and (max-width:1080px){
+        .ml-Camembert{
+            margin-left: 4vw;
+        }
+    }
 
-
-
-
-
+    @media (min-width: 1081px){
+        .ml-Camembert{
+            margin-left: 10vw;
+        }
+    }
 
 
 
@@ -315,7 +333,7 @@
         margin: 20px auto;
     }
 
-/*********** INFOGRAPHIE EFFECTS ***********/
+/************* INFOGRAPHIE EFFECTS *************/
     #Skill-HTML {
         width: 80%;
         animation: Animate-HTML 4s;
