@@ -75,8 +75,12 @@
     }
 
     .textLink{
-        font-size: 0.7em !important;
+        font-size: 0.7em;
         font-weight: bolder;
+    }
+
+    .textTitre{
+        line-height:0.85em;
     }
 
 
@@ -98,6 +102,12 @@
     @media (max-width: 768px) {
         .titreCDA{
             font-size: 150%;
+        }
+    }
+
+    @media (max-width: 450px) {
+        .titreCDA{
+            font-size: 1em;
         }
     }
 
@@ -176,6 +186,16 @@
     .txtChiffres{
         font-size:2em;
         font-weight: bolder;
+    }
+
+    @media (max-width: 500px) {
+        .txtChiffres{
+            font-size:1.4em;
+        }
+
+        .txtQlqChiffres{
+            font-size:1.2em;
+        }
     }
 
 /********************* SECTION DATES **********************/
