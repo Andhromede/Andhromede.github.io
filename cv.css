@@ -16,12 +16,41 @@
         --grey: #727272; 
     }
 
-    .yellow{
-        color: var(--yellow);
+/********** Couleurs ***********/
+    .violet{
+        color: var(--purple);
+    }
+
+    .darkViolet{
+        color: var(--darkViolet);
+    }
+
+    .purple{
+        color: var(--purple);
     }
 
     .rose{
         color: var(--rose);
+    }
+
+    .red{
+        color: var(--red);
+    }
+
+    .orange{
+        color: var(--orange);
+    }
+
+    .yellow{
+        color: var(--yellow);
+    }
+
+    .green{
+        color: var(--green);
+    }
+
+    .darkGreen{
+        color: var(--darkGreen);
     }
 
     .turquoise{
@@ -36,33 +65,20 @@
         color: var(--blue);
     }
 
-    .violet{
-        color: var(--purple);
+    .grey{
+        color: var(--grey);
     }
 
-    .darkViolet{
-        color: var(--darkViolet);
+/********** TEXT LINK ***********/
+    a{
+        text-decoration:none;
     }
 
-    .purple{
-        color: var(--purple);
+    .textLink{
+        font-size: 0.7em !important;
+        font-weight: bolder;
     }
 
-    .darkGreen{
-        color: var(--darkGreen);
-    }
-
-    .green{
-        color: var(--green);
-    }
-
-    .orange{
-        color: var(--orange);
-    }
-
-    .red{
-        color: var(--red);
-    }
 
 /********** IMG HEADER + FOOTER ***********/
     .maxWidth100{
@@ -77,6 +93,12 @@
         text-align: center;
         font-weight: bolder;
         font-size: 250%;
+    }
+
+    @media (max-width: 768px) {
+        .titreCDA{
+            font-size: 150%;
+        }
     }
 
 /********** ICONS ***********/
@@ -164,31 +186,83 @@
         text-align: center;
         font-weight: bold;
         transform: translate( -50%, -50% );
+        left: 70%;
     }
 
     .textSize{
         font-size:0.9em;
-        line-height: 0.95em;
+        line-height: 1.2em;
         text-align: left;
     }
 
 /******* positions des sections (section date) ******/
     .cdaSection{
         top:7%;
-        left: 70%;
+    }
+
+    .msSection{
+        top: 20%;
     }
 
     .stageSection{
-        top: 19%;
-        left: 70%;
+        top: 33%;
     }
 
     .dwwmSection{
-        top: 33%;
-        left: 70%;
+        top: 46%;
     }
 
+    .decouverteSection{
+        top: 59%;
+    }
 
+    .bioSection{
+        top: 65.5%;
+    }
+
+    .ricvSection{
+        top: 73%;
+    }
+
+    .tpCuisineSection{
+        top: 81%;
+    }
+
+    .informatiqueSection{
+        top: 91%;
+    }
+
+    .bepSection{
+        top: 97%;
+    }
+
+    @media (min-width: 1260px ){
+        .msSection{
+            top: 18%;
+        }
+    }
+
+    @media (max-width: 1200px ){
+        .cdaSection{
+            top:4%;
+        }
+
+        .msSection{
+            top: 17%;
+        }
+
+        .stageSection{
+            top: 30%;
+        }
+    
+        .dwwmSection{
+            top: 43%;
+        }
+
+        .decouverteSection{
+            top: 57%;
+        }
+    }
 
 
  
