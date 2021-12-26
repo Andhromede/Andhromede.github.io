@@ -1,23 +1,56 @@
 /*********************** GENERAL ************************/
 /********************************************************/
     body{
-        --purple: #83435E;
-        --rose: #96024C;
-        --green: #7BAE47;
-        --darkGreen: #477338;
-        --orange: #C4872A;
-        --red: #9F0D0E;
-        --turquoise: #01B1AB;
-        --blue: #356BA2;
-        --darkTurquoise: #1A8A9B;
-        --grey: #727272;
-        --yellow: #DEDB00;
         --violet: #5D1774;
         --darkViolet: #514264;
+        --purple: #83435E;
+        --rose: #96024C;
+        --red: #9F0D0E;
+        --orange: #C4872A;
+        --yellow: #DEDB00;
+        --green: #7BAE47;
+        --darkGreen: #477338;
+        --turquoise: #01B1AB;
+        --darkTurquoise: #1A8A9B;
+        --blue: #356BA2;
+        --grey: #727272; 
+    }
+
+/********** Couleurs ***********/
+    .violet{
+        color: var(--purple);
+    }
+
+    .darkViolet{
+        color: var(--darkViolet);
+    }
+
+    .purple{
+        color: var(--purple);
+    }
+
+    .rose{
+        color: var(--rose);
+    }
+
+    .red{
+        color: var(--red);
+    }
+
+    .orange{
+        color: var(--orange);
     }
 
     .yellow{
         color: var(--yellow);
+    }
+
+    .green{
+        color: var(--green);
+    }
+
+    .darkGreen{
+        color: var(--darkGreen);
     }
 
     .turquoise{
@@ -32,29 +65,20 @@
         color: var(--blue);
     }
 
-    .violet{
-        color: var(--purple);
+    .grey{
+        color: var(--grey);
     }
 
-    .darkViolet{
-        color: var(--darkPurple);
+/********** TEXT LINK ***********/
+    a{
+        text-decoration:none;
     }
 
-    .darkGreen{
-        color: var(--darkGreen);
+    .textLink{
+        font-size: 0.7em !important;
+        font-weight: bolder;
     }
 
-    .green{
-        color: var(--green);
-    }
-
-    .orange{
-        color: var(--orange);
-    }
-
-    .red{
-        color: var(--red);
-    }
 
 /********** IMG HEADER + FOOTER ***********/
     .maxWidth100{
@@ -69,6 +93,12 @@
         text-align: center;
         font-weight: bolder;
         font-size: 250%;
+    }
+
+    @media (max-width: 768px) {
+        .titreCDA{
+            font-size: 150%;
+        }
     }
 
 /********** ICONS ***********/
@@ -156,34 +186,82 @@
         text-align: center;
         font-weight: bold;
         transform: translate( -50%, -50% );
+        left: 70%;
     }
 
     .textSize{
-        font-size:1.2em;
-        line-height: 0.95em;
+        font-size:0.9em;
+        line-height: 1.2em;
         text-align: left;
     }
 
-/******* positions des intitulés (section date) ******/
-    .cdaTitre{
-        top: 3%;
-        left: 70%;
+/******* positions des sections (section date) ******/
+    .cdaSection{
+        top:7%;
     }
 
-    .stageTitre{
-        top: 17%;
-        left: 70%;
+    .msSection{
+        top: 20%;
     }
 
-/******* textes sous intitulés (section date) ******/
-    .textCda{
-        top: 13vh;
-        left:40%
+    .stageSection{
+        top: 33%;
     }
 
-    .phpSymfony{
-        top: 34vh;
-        left:37%
+    .dwwmSection{
+        top: 46%;
+    }
+
+    .decouverteSection{
+        top: 59%;
+    }
+
+    .bioSection{
+        top: 65.5%;
+    }
+
+    .ricvSection{
+        top: 73%;
+    }
+
+    .tpCuisineSection{
+        top: 81%;
+    }
+
+    .informatiqueSection{
+        top: 91%;
+    }
+
+    .bepSection{
+        top: 97%;
+    }
+
+    @media (min-width: 1260px ){
+        .msSection{
+            top: 18%;
+        }
+    }
+
+    @media (max-width: 1200px ){
+        .cdaSection{
+            top:4%;
+        }
+
+        .msSection{
+            top: 17%;
+        }
+
+        .stageSection{
+            top: 30%;
+        }
+    
+        .dwwmSection{
+            top: 43%;
+        }
+
+        .decouverteSection{
+            top: 57%;
+        }
     }
 
 
