@@ -112,7 +112,7 @@
     }
 
 /**************** ICONS *****************/
-    .icon{
+    .w60Percent{
         width: 60%;
         min-width:90px;
     }
@@ -124,13 +124,6 @@
 
 /********************* COMPETENCES **********************/
 /********************************************************/
-    .imgCamembert{
-        width: 300px;
-        padding-right: 50px;
-        margin-left: 5em;
-        display: block;
-    }
-
     .qualites{
         position: absolute;
         z-index: 100;
@@ -143,36 +136,6 @@
     .DisplayInlineBlock {
         position: relative;
         display: inline-block;
-    }
-
-    .serieux {
-        top: 45%;
-        left: 12%;
-    }
-
-    .tenacite {
-        top: 40%;
-        left: 47vh;
-    }
-
-    .adaptation {
-        top: 68%;
-        left: 55vh;
-    }
-
-    .autonomie {
-        top: 87%;
-        left: 10%;
-    }
-
-    .autodidacte {
-        top: 90%;
-        left: 51vh;
-    }
-
-    .perfectionniste {
-        top: 100%;
-        left: 20vh;
     }
 
 /********************* QUELQUES CHIFFRES **********************/
@@ -319,9 +282,6 @@
             margin-left: 10vw;
         }
     }
-
-
-
 
 /********************** ANIMATIONS SKILLS BAR **********************/
 /********************************************************/
